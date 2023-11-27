@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+musicsections/__init__.py
+musicsections/core.py
+musicsections/deepsim.py
+musicsections/fewshot.py
+musicsections/fewshot_model.py
+musicsections/version.py
+musicsections/viz.py
+musicsections.egg-info/PKG-INFO
+musicsections.egg-info/SOURCES.txt
+musicsections.egg-info/dependency_links.txt
+musicsections.egg-info/requires.txt
+musicsections.egg-info/top_level.txt
