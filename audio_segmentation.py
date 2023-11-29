@@ -1,7 +1,7 @@
 import musicsections
 
-deepsim_model_folder = "./models/deepsim/beat.h5"
-fewshot_model_folder = "./models/fewshot/best_model.tar"
+deepsim_model_folder = "./models/deepsim/"
+fewshot_model_folder = "./models/fewshot/"
 
 model_deepsim = musicsections.load_deepsim_model(deepsim_model_folder)
 model_fewshot = musicsections.load_fewshot_model(fewshot_model_folder)
