@@ -1,7 +1,8 @@
 import musicsections
+import pickle
 
-deepsim_model_folder = "./models/deepsim/beat.h5"
-fewshot_model_folder = "./models/fewshot/best_model.tar"
+deepsim_model_folder = "./models/deepsim/"
+fewshot_model_folder = "./models/fewshot/"
 
 model_deepsim = musicsections.load_deepsim_model(deepsim_model_folder)
 model_fewshot = musicsections.load_fewshot_model(fewshot_model_folder)
@@ -18,6 +19,8 @@ segmentations, features = musicsections.segment_file(
     beats_alg="madmom",
     beats_file=None)
 
+with open('data.pickle', 'wb') as f:
+    pickle.dump(segmentations, f, pickle.HIGHEST_PROTOCOL)
 print(segmentations)
 print(features)
 # musicsections.plot_segmentation(segmentations)
